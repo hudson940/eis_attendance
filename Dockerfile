@@ -12,7 +12,7 @@ FROM openjdk:17-oracle
 
 
 WORKDIR /app
-COPY --from=MAVEN_BUILD /sources/target/register-*.jar /app/register.jar
+COPY --from=MAVEN_BUILD /sources/target/atte-*.jar /app/register.jar
 EXPOSE 8080
 
 
