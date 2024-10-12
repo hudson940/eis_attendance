@@ -12,8 +12,8 @@ FROM openjdk:17-oracle
 
 
 WORKDIR /app
-COPY --from=MAVEN_BUILD /sources/target/atte-*.jar /app/register.jar
+COPY --from=MAVEN_BUILD /sources/target/attendance-*.jar /app/attendance.jar
 EXPOSE 8080
 
 
-CMD ["java", "-jar", "register.war"]
+CMD ["java", "-jar", "attendance.jar"]
